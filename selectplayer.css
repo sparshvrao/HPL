@@ -1,0 +1,3862 @@
+@import url(/public/fonts/d11-icons/style.css?v=1.6);
+/* D11 Icons new*/
+
+/* D11 Icon*/
+@font-face {
+  font-family: 'D11 Icon';
+  src: url('/public/fonts/d11-fonts.eot?3fapne');
+  src: url('/public/fonts/d11-fonts.eot?3fapne#iefix')
+      format('embedded-opentype'),
+    url('/public/fonts/d11-fonts.ttf?3fapne') format('truetype'),
+    url('/public/fonts/d11-fonts.woff?3fapne') format('woff'),
+    url('/public/fonts/d11-fonts.svg?3fapne#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.d11-icon {
+  font-family: 'D11 Icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: 'liga';
+  -moz-font-feature-settings: 'liga=1';
+  -moz-font-feature-settings: 'liga';
+  -ms-font-feature-settings: 'liga' 1;
+  font-feature-settings: 'liga';
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--currency-font-color);
+}
+
+.input-box__clear-btn {
+  --icon-size: 14px;
+  --icon-color: #7b7a7a;
+}
+
+.input-field__clear-btn {
+  --icon-size: 14px;
+  --icon-color: #7b7a7a;
+  background-color: #a1a2a7;
+  border-radius: 50%;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  margin-top: 8px;
+  color: white;
+}
+
+.btn {
+  -webkit-tap-highlight-color: transparent;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  height: 28px;
+  margin: 0;
+  padding: 0 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: var(--font-small);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn--flat {
+  --color: var(--primary-btn-color);
+  color: var(--primary-btn-color);
+  background: none;
+  text-align: center;
+  min-width: 88px;
+  padding: 10px 8px;
+  height: auto;
+}
+
+.btn--round {
+  border-radius: 50%;
+  padding: 0;
+  border: 1px solid;
+  width: 30px;
+  height: 30px;
+}
+
+.btn--large {
+  height: var(--large-button-height);
+}
+
+.btn--icon {
+  height: var(--button-height);
+  width: var(--button-height);
+  display: flex;
+  color: inherit;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn--raised {
+  min-width: 88px;
+  color: var(--primary-fg-color);
+  background-color: var(--primary-btn-color);
+}
+
+.btn--disable {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn--white {
+  background: #fff;
+  color: var(--primary-btn-color);
+}
+
+.btn--orange {
+  color: #ffffff;
+  border-color: #f6a623;
+  background: #f6a623;
+}
+
+.btn--blue {
+  color: #ffffff;
+  border-color: #4990e2;
+  background: #4990e2;
+}
+
+.btn--text-grey {
+  color: #888;
+  border-color: #888;
+}
+
+.btn--bordered {
+  border: 1px solid var(--color);
+  --color: var(--primary-btn-color);
+  color: var(--primary-btn-color);
+  background: none;
+  text-align: center;
+  min-width: 88px;
+}
+
+.btn--green {
+  color: #ffffff;
+  border-color: #2db23e;
+  background: #2db23e;
+}
+
+.btn--thin {
+  padding: 0;
+  min-width: 0;
+}
+
+.btn--small {
+  min-width: 60px;
+  height: 25px;
+}
+
+.btn--bordered--white {
+  border-color: #ffffff;
+}
+
+.text-color--white {
+  color: #ffffff;
+}
+
+.btn--background--white {
+  background-color: #ffffff;
+}
+
+.btn--grey-bordered {
+  border-color: #d6d6d6;
+}
+
+.app-shell {
+  --animation-width: 100px;
+  --animation-duration: 0.5s;
+  --animation-delay: 0s;
+  --end-color: #fff;
+  --main-color: #d7d7d7;
+  background: linear-gradient(
+    90deg,
+    var(--end-color) -30%,
+    var(--main-color) 50%,
+    var(--end-color) 130%
+  );
+  height: 1em;
+  border-radius: 2px;
+  width: var(--animation-width);
+  animation: app-shell-animation var(--animation-duration)
+    var(--animation-delay) linear infinite;
+  background-size: var(--animation-width);
+}
+
+@keyframes app-shell-animation {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: var(--animation-width) 0px;
+  }
+}
+
+.app-toolbar {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-fg-color);
+  --icon-color: #fff;
+}
+
+.app-toolbar-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+}
+
+/* TODO(fixme): Breaks encapsulation */
+.button-group .btn {
+  flex: 1 0 0;
+  margin-right: 8px;
+  min-width: 0;
+}
+
+.button-group .btn:last-child {
+  margin-right: 0;
+}
+
+.contest-card__tnc-row:not(:first-of-type) {
+  padding: 0 0 8px;
+}
+
+.contest-card__winner-row:nth-of-type(1) {
+  color: #f5a623;
+}
+
+.contest-card__winner-row:nth-of-type(2) {
+  color: #63cda6;
+}
+
+.contest-card__winner-row:nth-of-type(3) {
+  color: #478eaf;
+}
+
+.player-image-profile {
+  --size: 46px;
+}
+
+.player-image-profile__avatar-info-icon {
+  --icon-size: 16px;
+  margin-top: calc(-1 * var(--size));
+}
+
+.player-profile-row--border {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+#shepherdModalOverlayContainer {
+  -ms-filter: 'progid:dximagetransform.microsoft.gradient.alpha(Opacity=50)';
+  filter: alpha(opacity=50);
+  height: 100vh;
+  left: 0;
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  transition: all 0.3s ease-out;
+  width: 100vw;
+  z-index: 9997;
+}
+
+#shepherdModalOverlayContainer #shepherdModalMask,
+#shepherdModalOverlayContainer #shepherdModalMaskRect {
+  height: 100vh;
+  width: 100vw;
+}
+
+.shepherd-modal.shepherd-enabled {
+  position: relative;
+  z-index: 9998;
+}
+
+.shepherd-active.shepherd-modal-is-visible :not(.shepherd-target) {
+  pointer-events: none;
+}
+
+body.shepherd-active.shepherd-modal-is-visible {
+  overflow-y: hidden;
+}
+
+.shepherd-active.shepherd-modal-is-visible .shepherd-button,
+.shepherd-active.shepherd-modal-is-visible .shepherd-button *,
+.shepherd-active.shepherd-modal-is-visible .shepherd-cancel-link,
+.shepherd-active.shepherd-modal-is-visible .shepherd-cancel-link *,
+.shepherd-active.shepherd-modal-is-visible .shepherd-element,
+.shepherd-active.shepherd-modal-is-visible .shepherd-element *,
+.shepherd-active.shepherd-modal-is-visible .spotlight_skip_button button {
+  pointer-events: auto;
+}
+
+.tippy-arrow {
+  -ms-transform: scale(2);
+  transform: scale(2);
+}
+
+.tippy-popper {
+  z-index: 9999;
+}
+
+.tippy-popper .tippy-arrow {
+  border: 14px solid #23b14f;
+  content: '';
+  display: block;
+  height: 0;
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+}
+
+.tippy-popper[x-placement^='top'] {
+  margin-bottom: 16px;
+}
+
+.tippy-popper[x-placement^='top'] .tippy-arrow {
+  border-bottom: 0;
+  border-top-color: #23b14f;
+  left: calc(50% - 16px);
+}
+
+.tippy-popper[x-placement^='bottom'] {
+  margin-top: 16px;
+}
+
+.tippy-popper[x-placement^='bottom'] .tippy-arrow {
+  border-bottom-color: #23b14f;
+  border-top: 0;
+  left: calc(50% - 16px);
+}
+
+.tippy-popper[x-placement^='left'] {
+  margin-right: 16px;
+}
+
+.tippy-popper[x-placement^='left'] .tippy-arrow {
+  border-left-color: #23b14f;
+  border-right: 0;
+  margin-top: -16px;
+  top: calc(50% - 16px);
+}
+
+.tippy-popper[x-placement^='right'] {
+  margin-left: 16px;
+}
+
+.tippy-popper[x-placement^='right'] .tippy-arrow {
+  border-left: 0;
+  border-right-color: #23b14f;
+  top: calc(50% - 16px);
+}
+
+.tippy-popper .tippy-tooltip {
+  background-color: rgba(0, 0, 0, 0);
+  max-height: 100%;
+  max-width: 100%;
+  padding: 0;
+  width: 400px;
+}
+
+.shepherd-element,
+.shepherd-element *,
+.shepherd-element:after,
+.shepherd-element :after,
+.shepherd-element:before,
+.shepherd-element :before {
+  box-sizing: border-box;
+}
+
+.shepherd-element {
+  filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+}
+
+.shepherd-element.shepherd-has-title .shepherd-content header {
+  background: #23b14f;
+  padding: 12px 16px;
+  line-height: 18px;
+}
+
+.shepherd-element .shepherd-content {
+  background: #23b14f;
+  font-size: inherit;
+  padding: 0;
+  border-radius: 5px;
+}
+
+.shepherd-element .shepherd-content header {
+  *zoom: 1;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 2em;
+  padding: 0.75em 0.75em 0;
+}
+
+.shepherd-element .shepherd-content header:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.shepherd-element .shepherd-content header .shepherd-title {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  vertical-align: middle;
+}
+
+.shepherd-element .shepherd-content header .shepherd-title {
+  color: #ffffff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  font-size: 14px;
+}
+
+.shepherd-element .shepherd-content .shepherd-text {
+  color: #ffffff;
+  text-align: left;
+  padding: 0px 16px;
+  font-size: 12px;
+}
+
+.shepherd-element .shepherd-content .shepherd-text p {
+  margin-top: 0;
+}
+
+.shepherd-element .shepherd-content .shepherd-text p:last-child {
+  margin-bottom: 0;
+}
+
+.shepherd-element .shepherd-content footer {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 16px 12px;
+}
+
+.shepherd-element .shepherd-content footer .shepherd-buttons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+.shepherd-element
+  .shepherd-content
+  footer
+  .shepherd-buttons
+  li
+  .shepherd-button {
+  display: inline-block;
+  *display: inline;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  background: transparent;
+  border: 0;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 1em;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  border: 1px solid;
+}
+
+.shepherd-element .shepherd-content footer .shepherd-buttons li {
+  display: inline;
+  margin-right: 12px;
+}
+
+.shepherd-element .shepherd-content footer .shepherd-buttons li:last-child {
+  margin-right: 0;
+}
+
+.shepherd-element
+  .shepherd-content
+  footer
+  .shepherd-buttons
+  li
+  .shepherd-button.last-step-button {
+  background: #ffffff;
+  color: #23b14f;
+}
+
+.shepherd-button:focus {
+  outline: none;
+}
+
+.shepherd-modal-target:focus {
+  outline: none !important;
+}
+
+.player-container:hover .role-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.player-card-container:last-child::after {
+  display: none;
+}
+
+.dropdown-list-items::-webkit-scrollbar {
+  width: 4px;
+  background-color: #fff;
+}
+
+.dropdown-list-items::-webkit-scrollbar-thumb {
+  background-color: rgba(40, 40, 40, 0.2);
+  border-radius: 4px;
+}
+
+.dropdown-list-item:hover:not(.selected) {
+  background-color: #dcdcdc;
+}
+
+.dropdown-list-item.selected {
+  background-color: #282828;
+  color: #fff;
+}
+
+.contest-list-item--container:hover {
+  border: 1px solid #dcdcdc;
+  background-color: #fafafa;
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/public/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'), local('MaterialIcons-Regular'),
+    url(/public/MaterialIcons-Regular.woff2) format('woff2'),
+    url(/public/MaterialIcons-Regular.woff) format('woff'),
+    url(/public/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Noway';
+  font-style: normal;
+  font-weight: 300;
+  src: url(/public/fonts/Noway-Roman-Webfont/Noway-Light-webfont/noway-light-webfont.eot); /* For IE6-8 */
+  src: local('Noway Light'), local('Noway-Light'),
+    url(/public/fonts/Noway-Roman-Webfont/Noway-Light-webfont/noway-light-webfont.woff2)
+      format('woff2'),
+    url(/public/fonts/Noway-Roman-Webfont/Noway-Light-webfont/noway-light-webfont.woff)
+      format('woff'),
+    url(/public/fonts/Noway-Roman-Webfont/Noway-Light-webfont/noway-light-webfont.ttf)
+      format('truetype');
+}
+
+@font-face {
+  font-family: 'Noway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/public/fonts/Noway-Roman-Webfont/Noway-Regular-webfont/noway-regular-webfont.eot); /* For IE6-8 */
+  src: local('Noway Regular'), local('Noway-Regular'),
+    url(/public/fonts/Noway-Roman-Webfont/Noway-Regular-webfont/noway-regular-webfont.woff2)
+      format('woff2'),
+    url(/public/fonts/Noway-Roman-Webfont/Noway-Regular-webfont/noway-regular-webfont.woff)
+      format('woff'),
+    url(/public/fonts/Noway-Roman-Webfont/Noway-Regular-webfont/noway-regular-webfont.ttf)
+      format('truetype');
+}
+
+@font-face {
+  font-family: 'Noway';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/public/fonts/Noway-Roman-Webfont/Noway-Medium-webfont/noway-medium-webfont.eot); /* For IE6-8 */
+  src: local('Noway Medium'), local('Noway-Medium'),
+    url(/public/fonts/Noway-Roman-Webfont/Noway-Medium-webfont/noway-medium-webfont.woff2)
+      format('woff2'),
+    url(/public/fonts/Noway-Roman-Webfont/Noway-Medium-webfont/noway-medium-webfont.woff)
+      format('woff'),
+    url(/public/fonts/Noway-Roman-Webfont/Noway-Medium-webfont/noway-medium-webfont.ttf)
+      format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: var(--icon-size); /* Preferred icon size */
+  width: var(--icon-size);
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background-color: #fafafa;
+  color: var(--color);
+  font-family: Noway, sans-serif, -apple-system, BlinkMacSystemFont, “Segoe UI”,
+    Roboto, “Helvetica Neue”, Ubuntu, Arial, sans-serif;
+  font-size: var(--font-medium);
+  font-weight: 500;
+  user-select: none;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  overflow: hidden;
+}
+
+img:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #ccc;
+}
+
+.noway-font-page {
+  font-family: Noway, sans-serif, -apple-system, BlinkMacSystemFont, “Segoe UI”,
+    Roboto, “Helvetica Neue”, Ubuntu, Arial, sans-serif;
+}
+
+.leaderboardTeamList img:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: none;
+  background-size: contain;
+  background-image: url('/public/imgs/pwa_default_user_avatar.png');
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.appContainer_6475d {
+    max-width: 550px;
+    height: 100%
+}
+
+.banner_b5452 {
+    max-width: 550px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    z-index: 10;
+    background-color: #000;
+    justify-content: space-between;
+    color: #fff
+}
+
+.logoContainer_029e0 {
+    display: flex
+}
+
+.logo_94a03 {
+    margin-right: 12px;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    background-color: #e10000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.icon_2c2a9 {
+    display: inline-block
+}
+
+.text_816e6 {
+    max-width: 125px
+}
+
+.successActionButton_bbba7 {
+    display: inline-block;
+    cursor: pointer;
+    background-color: #008c37;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none
+}
+
+.appBgImage_0367e {
+    background-image: url(/public/imgs/desktop-pwa_11.jpg);
+    position: fixed;
+    left: 550px;
+    right: 0;
+    background-size: cover;
+    top: 0;
+    bottom: 0
+}
+
+.lazyContainer_3ec17 {
+    width: 100%
+}
+
+.lazyContainer_95227 {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center
+}
+
+.blockLoader_580b6 {
+    margin: 12px auto
+}
+
+.loaderCircular_99e87 {
+    animation: kf_loader-rotate 2s linear infinite
+}
+
+.loaderPath_388a6 {
+    animation: kf_loader-stroke 1.5s ease-in-out infinite;
+    stroke-dasharray: 1, 162;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    stroke-width: 6
+}
+
+.black_7fbc4 {
+    stroke: rgba(0, 0, 0, 0.5)
+}
+
+@keyframes kf_fade-in {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+.lazyComponent_3ec17 {
+    width: 100%
+}
+
+.lazyContainer_3ec17 {
+    width: 100%
+}
+
+.fadeIn_45377 {
+    animation: kf_fade-in .25s linear
+}
+
+.loaderContainer_d2930 {
+    display: flex;
+    height: 100%;
+    align-items: center
+}
+
+@keyframes kf_loader-rotate {
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes kf_loader-stroke {
+    0% {
+        stroke-dasharray: 1, 162;
+        stroke-dashoffset: 0
+    }
+
+    50% {
+        stroke-dasharray: 162, 162;
+        stroke-dashoffset: -80
+    }
+
+    100% {
+        stroke-dasharray: 162, 162;
+        stroke-dashoffset: -162
+    }
+}
+
+.blockLoader_580b6 {
+    margin: 12px auto
+}
+
+.loaderPath_388a6 {
+    animation: kf_loader-stroke 1.5s ease-in-out infinite;
+    stroke-dasharray: 1, 162;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    stroke-width: 6
+}
+
+.loaderCircular_99e87 {
+    animation: kf_loader-rotate 2s linear infinite
+}
+
+.black_7fbc4 {
+    stroke: rgba(0, 0, 0, 0.5)
+}
+
+.white_bec4c {
+    stroke: #fff
+}
+
+.brand_13e3b {
+    stroke: #c51d23;
+    opacity: 0.7
+}
+
+.logoLoaderContainer_7a91f {
+    display: flex;
+    height: 100%;
+    flex: 1;
+    align-items: center;
+    justify-content: center
+}
+
+.centerLoader_00153 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center
+}
+
+.messageContainer_7cec6 {
+    margin: 40px;
+    text-align: center
+}
+
+.messageHeader_0ddef {
+    margin: 8px 0;
+    font-weight: 500
+}
+
+.message_38ec1 {
+    margin-top: 12px;
+    font-size: 12px;
+    color: #888
+}
+
+.smallImage_a36ae {
+    height: 36px;
+    width: 36px
+}
+
+.bigImage_3f316 {
+    height: 120px;
+    width: 120px
+}
+
+.lazyContainer_95227 {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center
+}
+
+.materialIcon_10a4f {
+    font-family: Material Icons;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr
+}
+
+.disabledButton_cf79e {
+    opacity: 0.5;
+    cursor: not-allowed
+}
+
+.resetButton_62ab8 {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    height: 32px;
+    padding: 0 8px
+}
+
+.primaryButtonAlign_02538 {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #3759a5;
+    outline: none
+}
+
+.raisedGreenButton_20c05 {
+    background: #25ba38;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    height: 32px;
+    padding: 8px 8px;
+    text-transform: uppercase;
+    width: 120px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.raisedGreenButtonDisabled_e0a23 {
+    background: #dcdcdc;
+    color: #969696;
+    opacity: 1
+}
+
+.fullWidthGreenButton_5063b {
+    background: #25ba38;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 14px;
+    height: 30px;
+    padding: 0 8px;
+    width: 100%;
+    border-radius: 4px
+}
+
+.GreenFullWidthDisabled_c3e9d {
+    background: #dcdcdc;
+    color: #969696;
+    opacity: 1;
+    cursor: default
+}
+
+.iconButton_fe158 {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    height: 48px;
+    padding: 0 8px;
+    width: 48px
+}
+
+.iconContent_3cbfd {
+    padding-left: 4px
+}
+
+.fullWidthGreenAnchor_d17af {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    height: 36px;
+    padding: 0 8px;
+    border-radius: 4px;
+    background-color: #00b137;
+    width: 100%
+}
+
+.fullWidthGreenAnchorWidget_8aaae {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    height: 36px;
+    padding: 0 8px;
+    border-radius: 4px;
+    background-color: #109e38;
+    width: 100%
+}
+
+.smallGreenButton_4bae7 {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    height: 28px;
+    padding: 0 8px;
+    border-radius: 4px;
+    background-color: #00b137;
+    width: 76px
+}
+
+.successActionButton_bbba7 {
+    display: inline-block;
+    cursor: pointer;
+    background-color: #008c37;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none
+}
+
+.GreenTextBorderedButton_04ab0 {
+    background: none;
+    border: 1px solid #008c37;
+    cursor: pointer;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #008c37;
+    font-weight: 500;
+    font-size: 14px;
+    height: 40px;
+    padding: 0 8px;
+    background-color: #FFF;
+    border-radius: 4px;
+    min-width: 100%
+}
+
+.GreyBorderedWhiteAnchor_2c453 {
+    background: #fff;
+    border: 1px solid #d8d8d8;
+    cursor: pointer;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2a2a2a;
+    font-weight: 500;
+    font-size: 12px;
+    height: 32px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-transform: uppercase
+}
+
+.flexChildAnchor_679d2 {
+    flex: 1;
+    text-decoration: none;
+    font-size: inherit;
+    font-weight: inherit;
+    color: #00a0ff
+}
+
+.actionButton_162da {
+    min-width: 100px;
+    padding: 4px;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s linear, color 0.2s linear, border-color 0.2s linear
+}
+
+.disabledActionButton_131a3 {
+    background-color: #dcdcdc;
+    color: #969696;
+    border: 1px solid #dcdcdc;
+    cursor: not-allowed
+}
+
+.bgColorDefault_2e2af {
+    background-color: #fff;
+    color: #282828
+}
+
+.bgColorPrimary_c85f7 {
+    background-color: #00b137;
+    color: #fff;
+    border: 1px solid #00b137
+}
+
+.borderNone_a2973 {
+    border: none
+}
+
+.borderDisabled_863cb {
+    border: 1px solid #dcdcdc
+}
+
+.borderPrimary_35d70 {
+    border: 1px solid #00b137
+}
+
+.textUppercase_ce5fe {
+    text-transform: uppercase
+}
+
+.textColorDefault_7b586 {
+    color: #282828
+}
+
+.cursorPointer_1dc78 {
+    cursor: pointer
+}
+
+.cursorNotAllowed_9de87 {
+    cursor: not-allowed
+}
+
+.loaderButton_8595d {
+    padding: 6px 4px
+}
+
+.flatGreenFullWidthAnchor_6cf4e {
+    display: flex;
+    cursor: pointer;
+    background-color: #008c37;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 204px;
+    height: 40px;
+    align-items: center;
+    justify-content: center
+}
+
+.newButton_7ea12
+}
+
+.newButton_7ea12:focus {
+    outline: none
+}
+
+.fullWidthWidget_281be {
+    padding: 12px 8px;
+    background-color: #109e38;
+    height: 40px
+}
+
+.fullWidthWidgetDisabled_972cf {
+    padding: 12px 8px;
+    background: #dcdcdc;
+    height: 40px
+}
+
+.alignCenter_2c6a0 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+}
+
+@keyframes kf_prompt-enter-animation {
+    from {
+        transform: translateY(-100%)
+    }
+
+    to {
+        transform: translateY(0%)
+    }
+}
+
+@keyframes kf_prompt-exit-animation {
+    from {
+        transform: translateY(0%)
+    }
+
+    to {
+        transform: translateY(-100%)
+    }
+}
+
+.wrapper_8dd8b {
+    z-index: 12
+}
+
+.constrainToLeftPane_d9dd6 {
+    max-width: 550px
+}
+
+.bigPromptWrapper_6977a {
+    padding-top: 28px
+}
+
+.smallPromptWrapper_acec0 {
+    padding-top: 12px
+}
+
+.message_5c778 {
+    color: #fff;
+    padding: 8px 8px 0 8px;
+    text-align: center
+}
+
+.messageWithoutClose_9e942 {
+    padding-bottom: 12px
+}
+
+.messageWithClose_d5c8f {
+    padding-bottom: 0
+}
+
+.messageWithFlex_ad708 {
+    display: flex;
+    align-items: center;
+    height: 36px;
+    padding: 0 32px 0 0
+}
+
+.error_a70e4 {
+    background-color: #f68323
+}
+
+.success_152aa {
+    background-color: #2eb13e
+}
+
+.closeIcon_b1631 {
+    border-radius: 50%;
+    background-color: #282828;
+    cursor: pointer;
+    padding: 4px
+}
+
+.fullWidth_574c4 {
+    flex: 1
+}
+
+.fullWidthPromptWrapper_1f571 {
+    padding: 0
+}
+
+.prompt_e8ad3 {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    animation-duration: 200ms;
+    animation-timing-function: cubic-bezier(0.14, 1.06, 1, 0.99)
+}
+
+.promptCloseButton_11bd7 {
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center
+}
+
+.promptEnter_5ba7d {
+    animation: kf_prompt-enter-animation 200ms cubic-bezier(0.14, 1.06, 1, 0.99) forwards
+}
+
+.promptExit_6547f {
+    animation: kf_prompt-exit-animation 200ms cubic-bezier(0.14, 1.06, 1, 0.99) forwards
+}
+
+.icon_2c2a9 {
+    display: inline-block
+}
+
+.banner_b5452 {
+    max-width: 550px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    z-index: 10;
+    background-color: #000;
+    justify-content: space-between;
+    color: #fff
+}
+
+.text_816e6 {
+    max-width: 125px
+}
+
+.logoContainer_029e0 {
+    display: flex
+}
+
+.logo_94a03 {
+    margin-right: 12px;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    background-color: #e10000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.appBgImage_0367e {
+    background-image: url(/public/imgs/desktop-pwa_11.jpg);
+    position: fixed;
+    left: 550px;
+    right: 0;
+    background-size: cover;
+    top: 0;
+    bottom: 0
+}
+
+.desktopInfoWrapper_7ab46 {
+    top: 12%;
+    position: absolute;
+    margin: 12px 40px;
+    color: white;
+    width: 80%;
+    height: 55%
+}
+
+.desktopInfoTop_9bf27 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold
+}
+
+.desktopInfoTopLeft_3d48d {
+    color: #fff
+}
+
+.desktopInfoTopRight_0db77 {
+    color: #ffc81e
+}
+
+.desktopInfoMiddle_ae625 {
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 4px 0
+}
+
+.desktopInfoBottom_9eb8a {
+    margin-top: 52px;
+    font-size: 16px;
+    margin-bottom: 20px
+}
+
+.footerWrapper_8622b {
+    position: absolute;
+    height: 100%;
+    width: 100%
+}
+
+.appContainer_6475d {
+    max-width: 550px;
+    height: 100%
+}
+
+.fullScreenContainer_46ee3 {
+    width: 100vw;
+    height: 100vh;
+    font-family: NoWay;
+    font-weight: 400
+}
+
+@keyframes kf_bg-overlay-in-animation {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes kf_bg-overlay-out-animation {
+    from {
+        opacity: 1
+    }
+
+    to {
+        opacity: 0
+    }
+}
+
+.bgOverlay_c66d6 {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    animation-duration: 400ms;
+    animation-timing-function: cubic-bezier(0.24, 1.5, 1, 1);
+    position: fixed
+}
+
+.bgOverlayFadeIn_dbbba {
+    animation: kf_bg-overlay-in-animation 400ms<br> cubic-bezier(0.24, 1.5, 1, 1) forwards
+}
+
+.bgOverlayFadeOut_69872 {
+    animation: kf_bg-overlay-out-animation 400ms<br> cubic-bezier(0.24, 1.5, 1, 1) forwards
+}
+
+@keyframes kf_dialog-content-exit-animation {
+    from {
+        transform: scale(1) translateY(0);
+        opacity: 1
+    }
+
+    to {
+        transform: scale(0.5) translateY(50%);
+        opacity: 0
+    }
+}
+
+@keyframes kf_dialog-content-enter-animation {
+    from {
+        transform: scale(0.5) translateY(50%);
+        opacity: 0
+    }
+
+    to {
+        transform: scale(1) translateY(0);
+        opacity: 1
+    }
+}
+
+.dialog_7731d {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    z-index: 11
+}
+
+.dialogAnimation_4b550 {
+    animation-duration: 300ms;
+    animation-timing-function: cubic-bezier(0, 0, 0, 1)
+}
+
+.dialogContentEnter_83122 {
+    animation: kf_dialog-content-enter-animation 300ms<br> cubic-bezier(0, 0, 0, 1) forwards
+}
+
+.dialogContentExit_a7b8e {
+    animation: kf_dialog-content-exit-animation 300ms<br> cubic-bezier(0, 0, 0, 1) forwards
+}
+
+.constrainToLeft_d9dd6 {
+    max-width: 550px
+}
+
+.content_16bb8 {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.3);
+    z-index: 1
+}
+
+.halfScreen_22da4 {
+    width: 90%;
+    max-width: 420px
+}
+
+.active_7d695 {
+    pointer-events: auto
+}
+
+.dialogBody_c4c83 {
+    padding: 20px 24px 24px;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch
+}
+
+.loadingDialog_7ce16 {
+    display: flex;
+    align-items: center
+}
+
+.loader_fdaf1 {
+    margin-right: 12px
+}
+
+.headerContainer_5bd2e {
+    background: linear-gradient(104deg, #3c3c3c 50%, #323232 50%);
+    display: flex;
+    flex-direction: column;
+    z-index: 5
+}
+
+.headerWebKitSticky_3d076 {
+    position: -webkit-sticky
+}
+
+.headerSticky_41a22 {
+    position: sticky;
+    top: 0px
+}
+
+.appToolbar_7a6fe{
+    position: unset !important;
+}
+
+.headerFixed_38df7 {
+    position: absolute !important;
+    top: 130 !important;
+    max-width: 550px;
+    width: 100%
+}
+
+.headerFixedWithBanner_50d22 {
+    top: 64px
+}
+
+.defaultHeaderContent_00a63 {
+    display: flex;
+    justify-content: space-between;
+    color: #FFF;
+    height: 30px !important;
+}
+
+.headerLeft_97209 {
+    display: flex;
+    flex: 1 0 0;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 16px
+}
+
+.headerCenter_aa154 {
+    display: flex-end;
+    flex: 1 0 0;
+    justify-content: center;
+    align-items: center;
+    margin-right:25% ;
+}
+
+.headerRight_b78f0 {
+    display: flex;
+    flex: 1 0 0;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 16px
+}
+
+.greenAnchor_b9367 {
+    color: #00b137;
+    text-decoration: none;
+    font-size: 12px
+}
+
+.borderedButton_57ca9 {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #3759a5;
+    outline: none;
+    text-transform: uppercase;
+    border: 1px solid #3759a5;
+    border-radius: 4px;
+    padding: 4px 12px;
+    background: #fff;
+    white-space: nowrap;
+    text-decoration: none
+}
+
+.largeBorderedButton_5ba42 {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #3759a5;
+    outline: none;
+    text-transform: uppercase;
+    border: 1px solid #3759a5;
+    border-radius: 4px;
+    padding: 10px 12px;
+    background: #fff;
+    white-space: nowrap;
+    text-decoration: none;
+    justify-content: center
+}
+
+.floatingAnchorButton_fac02 {
+    font-weight: 600;
+    text-decoration: none;
+    color: #3759a5
+}
+
+.whiteColoredButton_bb22b {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 12px;
+    height: 32px;
+    padding: 0 8px;
+    outline: none
+}
+
+.whiteBorderedButton_6b901 {
+    background: none;
+    border: 1px solid #FFF;
+    cursor: pointer;
+    margin: 0 8px;
+    text-decoration: none;
+    text-align: center;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 12px;
+    height: 32px;
+    padding: 0 8px;
+    outline: none;
+    text-transform: uppercase;
+    border-radius: 20px
+}
+
+.roundedIconAnchorButton_ff8ae {
+    background: linear-gradient(#4972CF, #3759A5);
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 14px;
+    height: 40px;
+    padding: 0 8px;
+    border-radius: 20px;
+    box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.3)
+}
+
+.fullWidthBlueButton_6deb0 {
+    background: #3759a5;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 14px;
+    height: 30px;
+    padding: 0 8px;
+    width: 100%;
+    border-radius: 4px
+}
+
+.largeButtonAnchor_fe158 {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    height: 48px;
+    padding: 0 8px;
+    width: 48px
+}
+
+.raisedButton_9b972 {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    height: 32px;
+    padding: 0 8px;
+    border-radius: 4px;
+    min-width: 88px;
+    background-color: #3759a5
+}
+
+.whiteBgButton_f180e {
+    background: #fff;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #323232;
+    font-weight: 500;
+    font-size: 12px;
+    height: 32px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-transform: uppercase
+}
+
+.raisedWhiteButton_aa7b0 {
+    background: #fff;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #25ba38;
+    font-weight: 500;
+    font-size: 12px;
+    height: 32px;
+    padding: 8px 8px;
+    text-transform: uppercase;
+    width: 120px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flatGreenButton_ff6ed {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    height: 32px;
+    padding: 0 8px;
+    border-radius: 4px;
+    background-color: #00b137
+}
+
+.buttonDisabled_e0a23 {
+    background: #dcdcdc;
+    color: #969696;
+    opacity: 1
+}
+
+.raisedWhiteButtonNew_08689 {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: inherit;
+    font-weight: 500;
+    font-size: 12px;
+    height: 32px;
+    padding: 0 8px;
+    width: 156px;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 4px 6px 0 rgba(0, 0, 0, 0.05)
+}
+
+.iconLabel_f964d {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%
+}
+
+.iconWithLabel_3877c {
+    display: inline-flex;
+    align-items: center
+}
+
+.iconLabelSmall_a2024 {
+    font-size: 12px
+}
+
+.iconLabelMedium_48a55 {
+    font-size: 14px
+}
+
+.whiteBgGreyTextFlatButton_7df6c {
+    background-color: #fff;
+    color: #282828;
+    height: 36px;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 12px
+}
+
+.whiteBgGreyTextFlatButtonActive_b0a61 {
+    border-color: #25ba38;
+    color: #282828
+}
+
+.basicWhiteIconAnchor_3d48d {
+    color: #fff
+}
+
+.whiteIconButton_6998a {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    height: 32px;
+    padding: 0px
+}
+
+.basicAnchorTextWithIcon_63f36 {
+    color: #00a0ff;
+    align-items: center;
+    text-decoration: none
+}
+
+.timer_44feb {
+    color: #c61c23
+}
+
+.whiteTimer_3d48d {
+    color: #fff
+}
+
+.ctAppHeaderRight_029e0 {
+    display: flex
+}
+
+.guruIcon_0a307 {
+    height: 24px;
+    width: 24px;
+    margin-right: 12px
+}
+
+.helpLink_4c95c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    width: 24px;
+    border: solid 1px #acacac;
+    border-radius: 50%;
+    color: #acacac
+}
+
+.timer_3d48d {
+    color: #fff
+}
+
+.eePage_c1313 {
+    max-width: 550px;
+    z-index: 9
+}
+
+.mainContainer_3ec17 {
+    width: 100%
+}
+
+.stepsContainer_b7305 {
+    display: flex;
+    justify-content: space-between;
+    height: 100%
+}
+
+.inBetweenStep_649e4 {
+    align-items: center
+}
+
+.stepWrapper_3b103 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    flex: 1;
+    height: 100%
+}
+
+.stepNumberLabelWrapper_a0124 {
+    align-items: center;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    min-width: 60px;
+    justify-content: space-between;
+    height: 100%;
+    z-index: 5
+}
+
+.stepNumberLabelWrapperFirst_c475a {
+    align-self: flex-start
+}
+
+.stepNumberLabelWrapperLast_ee77c {
+    align-self: flex-end
+}
+
+.stepNumber_70f3d {
+    background: #dcdcdc;
+    color: #969696;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px
+}
+
+.stepLabel_9786e {
+    display: flex;
+    color: #969696;
+    font-size: 10px
+}
+
+.stepNumberActive_e02df {
+    color: #fff;
+    background: #00b137
+}
+
+.stepLabelWhiteActive_3d48d {
+    color: #fff
+}
+
+.stepLabelActive_7b586 {
+    color: #282828
+}
+
+.stepperLine_82b57 {
+    height: 2px;
+    width: 50%;
+    top: 9px;
+    position: absolute;
+    background: #dcdcdc;
+    z-index: 2
+}
+
+.stepperLineLeft_a18a6 {
+    left: 0%
+}
+
+.stepperLineRight_77c82 {
+    left: 50%
+}
+
+.stepperLineActive_83254 {
+    background: #00b137
+}
+
+.stepperLineFirst_1e88e {
+    margin-left: 30px
+}
+
+.stepperLineLast_f07b4 {
+    margin-left: -30px
+}
+
+@keyframes kf_bottom-sheet-swipe-in-animation {
+    from {
+        transform: translateY(104%)
+    }
+
+    to {
+        transform: translateY(0%)
+    }
+}
+
+@keyframes kf_bottom-sheet-swipe-out-animation {
+    from {
+        transform: translateY(0%)
+    }
+
+    to {
+        transform: translateY(104%)
+    }
+}
+
+.bottomSheet_72d08 {
+    max-width: 550px;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    animation-duration: 300ms;
+    animation-timing-function: ease-out
+}
+
+.bottomSheetContainer_a3c97 {
+    position: absolute;
+    width: 100%;
+    box-shadow: 2px 0px 14px 0px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    margin: auto;
+    left: 0;
+    bottom: 0;
+    right: 0
+}
+
+.bottomSheetContainerSwipeIn_09f8c {
+    animation: kf_bottom-sheet-swipe-in-animation 300ms<br> ease-out forwards
+}
+
+.bottomSheetContainerSwipeOut_d88aa {
+    animation: kf_bottom-sheet-swipe-out-animation 300ms<br> ease-out forwards
+}
+
+.bottomSheetActive_7d695 {
+    pointer-events: auto
+}
+
+.content_c948e {
+    transform-origin: top
+}
+
+.close_7e388 {
+    max-height: 0;
+    overflow: hidden
+}
+
+.tabItemSelected_ad8b3 {
+    border-bottom: solid 2px #c51d23;
+    opacity: 1
+}
+
+.tabItemInactive_06be2 {
+    border-bottom: solid 2px #fff;
+    opacity: 0.6
+}
+
+.tab_4245a {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+    max-width: 550px;
+    margin: auto;
+    padding: 0 8px;
+    background-color: #fff;
+    color: #282828
+}
+
+.tabItem_8556a {
+    align-items: center;
+    display: flex;
+    flex: 1 0 auto;
+    height: 48px;
+    padding: 0px 8px;
+    justify-content: space-evenly;
+    cursor: pointer;
+    transition: all ease-in 300ms
+}
+
+.playerProfileContainer_30e73 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: #efeff4
+}
+
+.playerProfileCurrentInfoContainer_9c5c9 {
+    margin: 8px;
+    border-radius: 4px;
+    background: #fff
+}
+
+.imageCourtesyFont_2e07e {
+    font-size: 10px
+}
+
+.imageCourtesy_0b4dd {
+    color: #7b7a7a
+}
+
+.imageCourtesyName_649ee {
+    color: #c51d23
+}
+
+.playerProfileToolbar_a58a4 {
+    background-color: #3c3c3c;
+    color: #fff;
+    height: 48px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    padding: 8px;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    text-transform: uppercase
+}
+
+.lineupStatusDot_55e93 {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    margin-right: 4px
+}
+
+.lineupStatusContainer_6ddad {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    min-height: 16px
+}
+
+.lineupDisclaimer_340cf {
+    padding-left: 4px;
+    font-size: 10px;
+    color: #969696
+}
+
+.noFantasyStats_93701 {
+    margin: 24px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 14px;
+    color: #969696
+}
+
+.fantasyStatsContainer_9f345 {
+    padding: 16px;
+    padding-bottom: 44px
+}
+
+.fantasyStatsTitle_0c91c {
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between
+}
+
+.dreamTeamIndicator_eb04a {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    color: #969696;
+    text-transform: uppercase
+}
+
+.matchStatInfoContainer_c74f7 {
+    margin-top: 12px;
+    border-radius: 4px;
+    flex: 1;
+    background: #fff;
+    padding: 12px
+}
+
+.matchStatPrimary_0d466 {
+    background: rgba(220, 220, 220, 0.2)
+}
+
+.matchStatPrimaryInfo_2a034 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px
+}
+
+.matchDetails_7ce16 {
+    display: flex;
+    align-items: center
+}
+
+.matchName_5f7b4 {
+    font-size: 14px;
+    margin-right: 12px
+}
+
+.matchStatRow_029e0 {
+    display: flex
+}
+
+.matchStatCell_42a0b {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: #969696;
+    font-size: 10px
+}
+
+.matchStatCellValue_2c3dd {
+    font-size: 14px;
+    color: #282828;
+    display: flex;
+    align-items: center
+}
+
+.matchStatsContent_c7ff8 {
+    background: #fff
+}
+
+.statCellValue_d00a3 {
+    font-size: 14px;
+    color: #000;
+    text-transform: capitalize
+}
+
+.statHeaderRow_be75f {
+    background: #fafafa;
+    border-top: 1px solid rgba(220, 220, 220, 0.4);
+    border-bottom: 1px solid rgba(220, 220, 220, 0.4);
+    font-size: 10px
+}
+
+.statCell_d6f7b {
+    padding: 12px
+}
+
+.expandIcon_f3d15 {
+    transition: transform 0.3s ease-in
+}
+
+.collapseIcon_ba031 {
+    transform: rotate(180deg)
+}
+
+.alignCenter_7ce16 {
+    display: flex;
+    align-items: center
+}
+
+.alignRight_3da16 {
+    display: flex;
+    align-items: flex-end
+}
+
+.playerProfileToolBar_f5088 {
+    background-color: #c51d23;
+    color: #fff;
+    height: 48px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    padding: 8px;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    text-transform: uppercase
+}
+
+.playerProfileInfo_7fbd3 {
+    overflow: scroll;
+    padding-bottom: 12px
+}
+
+.playerProfileRow_6d99e {
+    display: flex;
+    min-height: 48px
+}
+
+.playerProfileRow_6d99e:last-child {
+    border: none
+}
+
+.playerProfileAvatarIcon_7abb8 {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    background-size: cover;
+    background-color: #eee
+}
+
+.playerProfileRowBorder_d41f9 {
+    border-bottom: 1px solid #e8e8e8
+}
+
+.playerProfileCell_ec581 {
+    flex: 1 0 0;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    min-height: 52px
+}
+
+.playerProfileInfoHeader_69028 {
+    font-size: 12px;
+    margin-bottom: 4px
+}
+
+.playerProfileInfoHeaderData_86238 {
+    font-size: 16px
+}
+
+.playerProfileRowTime_a2024 {
+    font-size: 12px
+}
+
+.light_a0371 {
+    color: #888
+}
+
+.bold_7d783 {
+    font-weight: bold
+}
+
+.textUpper_ce5fe {
+    text-transform: uppercase
+}
+
+.sortingHeader_28c64 {
+    max-width: 550px;
+    font-size: var(--font-small);
+    background-color: #eef5fc;
+    color: #97b5d3;
+    text-transform: uppercase;
+    display: flex;
+    padding: 0 4px;
+    border-top: 1px solid #d4e3f2;
+    justify-content: space-between;
+    height: 40px
+}
+
+.sortingHeaderItem_26c9b {
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    padding: 8px 4px
+}
+
+.sortingHeaderItem_26c9b:last-of-type {
+    justify-content: flex-end
+}
+
+.sortingHeaderItemActive_22b38 {
+    color: #4073ae
+}
+
+.sortingHeaderIcon_32982 {
+    width: 24px
+}
+
+.dialogHeader_f1bfd {
+    padding: 24px 24px 0;
+    text-transform: uppercase;
+    color: #333232
+}
+
+.header_0b9e8 {
+    font-weight: bold;
+    font-size: 16px
+}
+
+.descText_c5373 {
+    color: #969696
+}
+
+.playerGrid_d50d1 {
+    color: #969696;
+    display: grid;
+    grid-gap: 4px 0;
+    margin-top: 8px
+}
+
+.buttonContainer_1d663 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end
+}
+
+.darkBg_77e9d {
+    background-color: rgba(220, 220, 220, 0.3)
+}
+
+.gridCell_bba24 {
+    padding: 4px 0;
+    text-align: center
+}
+
+.imageContainer_029e0 {
+    display: flex
+}
+
+.info_f9ba8 {
+    margin-left: -8px
+}
+
+.playerImageProfile_caaa0 {
+    height: 46px;
+    width: 46px
+}
+
+.playerImageContainer_6e52e {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100%;
+    width: 100%
+}
+
+.playerImageRoleContainer_c7252 {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: -12px;
+    top: -8px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.playerType_3785d {
+    background-color: #000;
+    color: #fff;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    font-size: 10px
+}
+
+.playerImageProfileImageContainer_9aec9 {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+    width: 100%
+}
+
+.playerImageProfileImage_07df6 {
+    width: 100%;
+    flex: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 10px 0 0
+}
+
+.squadOneText_912c4 {
+    display: flex;
+    flex-direction: column;
+    color: #acacac;
+    justify-content: center;
+    margin-left: 8px
+}
+
+.squadTwoText_c189d {
+    display: flex;
+    flex-direction: column;
+    color: #acacac;
+    align-items: flex-end;
+    justify-content: center;
+    margin-right: 8px
+}
+
+.mainContainer_e2328 {
+    display: flex;
+    margin: 0px 16px;
+    justify-content: space-between;
+    max-width: 550px
+}
+
+.mainContainerMobileHeight_8fb22 {
+    height: 40px
+}
+
+.mainContainerDesktopHeight_79be4 {
+    height: 52px
+}
+
+.centerContainer_82ad5 {
+    display: flex;
+    flex: 2;
+    justify-content: center
+}
+
+.leftContainer_7b125 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: flex-start;
+    justify-content: center
+}
+
+.rightContainer_a8b8b {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    flex: 1
+}
+
+.squadTextContainer_029e0 {
+    display: flex
+}
+
+.selectedCount_bfa59 {
+    font-size: 16px;
+    color: #fff
+}
+
+.totalCount_64cfa {
+    font-size: 10px;
+    padding-top: 4px
+}
+
+.flagContainer_029e0 {
+    display: flex
+}
+
+.homeTeamName_37af5 {
+    color: #fff;
+    background-color: #282828;
+    border: 1px solid #282828
+}
+
+.awayTeamName_95944 {
+    color: #282828;
+    background-color: #fff
+}
+
+.teamName_24fa0 {
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 4px
+}
+
+.teamCount_2787a {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 0px
+}
+
+.creditsText_25ff0 {
+    color: #fff;
+    font-size: 16px;
+    display: flex
+}
+
+.separator_f76d0 {
+    display: flex;
+    color: #fff;
+    align-items: center;
+    margin: 0 8px
+}
+
+.awayTeamFlag_961c3 {
+    align-content: flex-end
+}
+
+.teamSelectionsContainer_7ce16 {
+    display: flex;
+    align-items: center
+}
+
+.playerSelectionsContainer_3aba2 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    color: #acacac;
+    font-size: 12px
+}
+
+.creditTextContainer_1a819 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    color: #acacac;
+    font-size: 12px;
+    align-items: flex-end
+}
+
+.teamPointsContainer_b420f {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    color: #acacac;
+    font-size: 12px;
+    align-items: center
+}
+
+.teamPoints_bfa59 {
+    font-size: 16px;
+    color: #fff
+}
+
+.teamPreviewContainer_6255a {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    z-index: 9
+}
+
+.desktopTeamPreviewContainer_25c6c {
+    left: 550px;
+    width: 550px;
+    overflow-y: hidden
+}
+
+.mobileTeamPreviewContainer_3ec17 {
+    width: 100%
+}
+
+.mobileTeamPreviewContainerWithBanner_83f1f {
+    top: 64px;
+    width: 100%
+}
+
+.headerItem_029e0 {
+    display: flex
+}
+
+.toolbarElementMain_7948b {
+    flex: 1;
+    display: flex
+}
+
+.toolbarElementLeft_19260 {
+    justify-content: flex-start;
+    color: #fff;
+    padding: 8px
+}
+
+.toolbarElementRight_c98d9 {
+    justify-content: flex-end
+}
+
+.toolbarElementIcon_3d48d {
+    color: #fff
+}
+
+.content_eaf85 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column
+}
+
+.row_1894a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly
+}
+
+.rowTitle_b91f3 {
+    margin-bottom: 4px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: var(--font-small);
+    opacity: 0.52
+}
+
+.rowContent_1134b {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 8px 0
+}
+
+.playerRowHeight_01743 {
+    height: 85px
+}
+
+.fieldPlayerMain_32975 {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.fieldPlayerTitle_75d21 {
+    width: 65px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    font-size: var(--font-small);
+    white-space: nowrap;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    padding: 0px 4px;
+    height: 20px;
+    line-height: 20px
+}
+
+.homeTeamPlayerTitle_c0c14 {
+    background-color: #282828;
+    color: #fff
+}
+
+.awayTeamPlayerTitle_95944 {
+    color: #282828;
+    background-color: #fff
+}
+
+.playerImageProfile_0cc1f {
+    height: 38px;
+    width: 38px;
+    border-radius: 10px 0;
+    position: relative
+}
+
+.imageProfileContainer_6e52e {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100%;
+    width: 100%
+}
+
+.teamPreviewRowWrapper_0c54c {
+    width: 100%;
+    padding-top: 8px
+}
+
+.playerPoints_d4e06 {
+    white-space: nowrap;
+    color: #fff;
+    text-align: center;
+    padding: 2px;
+    font-size: var(--font-small)
+}
+
+.emptyStateWrapper_1b95a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 8px;
+    background: #00000059;
+    border-radius: 4px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.emptyStateText_2c68c {
+    padding: 8px;
+    color: #fff;
+    font-weight: bold;
+    white-space: nowrap
+}
+
+.emptyStateButton_b8f9b {
+    padding: 8px
+}
+
+.loadingWrapper_0363a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.paddingBottom_5e15a {
+    padding-bottom: 90px
+}
+
+.tall_0af6d {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 30px 0 0
+}
+
+.playerArea_eac11 {
+    position: relative;
+    height: 100%;
+    overflow: scroll
+}
+
+.spaceAround_64779 {
+    justify-content: space-around
+}
+
+.playersContainer_7eae4 {
+    flex-wrap: wrap;
+    height: 170px
+}
+
+.playerWrapper_22027 {
+    flex-basis: 25%
+}
+
+.containerWithHeaderDesktop_d52fe {
+    height: calc(100% - 100px);
+    min-height: calc(100% - 100px)
+}
+
+.containerWithHeaderMobile_7e379 {
+    height: calc(100% - 88px);
+    min-height: calc(100% - 88px)
+}
+
+.containerWithHeaderMobileWithBanner_b8fd1 {
+    height: calc(100% - 152px);
+    min-height: calc(100% - 152px)
+}
+
+.containerWithoutHeader_0f1f0 {
+    height: 100%;
+    min-height: 100%
+}
+
+.teamPreviewLoader_3e785 {
+    height: 100%;
+    display: flex;
+    align-items: center
+}
+
+.playerLineUpStatusIndicator_6a1e2 {
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    left: -4px;
+    top: -4px;
+    border-radius: 50%
+}
+
+.playerTitleContainer_cbc2d {
+    position: relative
+}
+
+.dreamTeamIconContainer_22587 {
+    position: relative;
+    bottom: 24px;
+    left: 32px
+}
+
+.dreamTeamIcon_cf544 {
+    height: auto;
+    width: 16px
+}
+
+.teamPreviewRowContainer_87cf6 {
+    width: 100%;
+    padding-bottom: 16px
+}
+
+.stepperContainer_b9ae4 {
+    display: flex;
+    justify-content: center
+}
+
+.activeStepper_2007e {
+    background-color: #00a037
+}
+
+.inactiveStepper_4d390 {
+    background-color: #fff
+}
+
+.stepperBlock_8b62f {
+    width: 36px;
+    height: 16px;
+    font-size: 12px;
+    transform: skew(-20deg);
+    border: 1px solid #323232;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.lastStepper_2bce1 {
+    font-size: 12px;
+    color: #000;
+    transform: skew(20deg)
+}
+
+.activeNumber_89478 {
+    font-size: 12px;
+    color: #fff;
+    transform: skew(20deg)
+}
+
+.lastStepperActive_3d48d {
+    color: #fff
+}
+
+.squadOneText_3ad2c {
+    display: flex;
+    flex-direction: column;
+    color: #acacac;
+    margin-left: 4px
+}
+
+.squadTwoText_b9766 {
+    display: flex;
+    flex-direction: column;
+    color: #acacac;
+    margin-left: 4px;
+    align-items: flex-end;
+    margin-right: 4px
+}
+
+.squadOneTextShrunk_c0ff5 {
+    display: flex;
+    flex-direction: column;
+    color: #acacac;
+    margin-left: 8px;
+    justify-content: center
+}
+
+.squadTwoTextShrunk_dcdbc {
+    display: flex;
+    flex-direction: column;
+    color: #acacac;
+    margin-left: 4px;
+    justify-content: center;
+    margin-right: 8px
+}
+
+.squadContainer_7ce16 {
+    display: flex;
+    align-items: center
+}
+
+.flag_008b5 {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%
+}
+
+.teamName_a2024 {
+    font-size: 12px
+}
+
+.homeTeamNameShrunk_37af5 {
+    color: #fff;
+    background-color: #282828;
+    border: 1px solid #282828
+}
+
+.awayTeamNameShrunk_95944 {
+    color: #282828;
+    background-color: #fff
+}
+
+.teamNameShrunk_50805 {
+    font-size: 12px;
+    align-self: center;
+    padding: 2px 8px;
+    border-radius: 4px
+}
+
+.separatorShrunk_ca143 {
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    color: #fff
+}
+
+.teamCountShrunk_a1b20 {
+    margin-top: 0px
+}
+
+.teamCountExtended_8b6e8 {
+    margin-top: 4px
+}
+
+.teamCount_bfa59 {
+    font-size: 16px;
+    color: #fff
+}
+
+.squadFlagContainer_47acd {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 4px
+}
+
+.container_b87ae {
+    display: flex;
+    flex-direction: column
+}
+
+.containerShrunk_7edb6 {
+    height: 88px
+}
+
+.containerExtended_cdca5 {
+    height: 136px
+}
+
+.maxInfoTextShrunk_af7c2 {
+    transform: scaleY(0.75)
+}
+
+.maxInfoText_19e12 {
+    font-size: 12px;
+    color: #fff;
+    display: flex;
+    align-self: center;
+    transform-origin: top;
+    height: 36px;
+    align-items: center;
+    transition: transform 0.2s
+}
+
+.infoContent_9a018 {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 16px
+}
+
+.playerSelectionContainer_bdd92 {
+    display: flex;
+    flex-direction: column;
+    color: #acacac;
+    font-size: 12px
+}
+
+.creditsContainer_9c26e {
+    display: flex;
+    flex-direction: column;
+    color: #acacac;
+    font-size: 12px;
+    text-align: right
+}
+
+.flexContainer_029e0 {
+    display: flex
+}
+
+.totalCount_5e151 {
+    font-size: 12px;
+    padding-top: 10px;
+    transition: transform 0.2s;
+    transform-origin: left top
+}
+
+.totalCountShrunk_391ae {
+    transform: scale(0.833) translateX(-4px);
+    padding-top: 6px
+}
+
+.squadBottomAligned_9adc4 {
+    display: flex;
+    align-self: flex-end
+}
+
+.selectedCount_e68c1 {
+    font-size: 24px;
+    color: #fff;
+    transition: transform 0.2s;
+    transform-origin: left top
+}
+
+.selectedCountShrunk_a78a8 {
+    transform: scale(0.67)
+}
+
+.creditsText_4bef4 {
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 24px;
+    transition: transform 0.2s;
+    transform-origin: right top
+}
+
+.creditsTextShrunk_a78a8 {
+    transform: scale(0.67)
+}
+
+.progressContainer_00657 {
+    margin: 24px 16px 16px
+}
+
+.infoLoaderProgressContainer_51138 {
+    display: flex;
+    justify-content: center;
+    margin: 24px 16px 16px
+}
+
+.playerSelectionContainerLoader_68e5b {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly
+}
+
+.leftInfoContent_8b4f7 {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    margin-right: 8px
+}
+
+.rightInfoContent_579f7 {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    margin-left: 8px
+}
+
+.playerImageProfile_a15fa {
+    height: 52px;
+    width: 52px
+}
+
+.playerImageContainer_95093 {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position: relative
+}
+
+.playerImage_c1544 {
+    width: 100%;
+    flex: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #969696
+}
+
+.squadName_333f8 {
+    position: absolute;
+    font-size: 10px;
+    padding: 2px;
+    bottom: 2px
+}
+
+.homeTeam_bc878 {
+    background-color: #282828;
+    color: #efeff4
+}
+
+.awayTeam_14061 {
+    color: #282828;
+    background-color: #efeff4
+}
+
+.rolesTitle_48372 {
+    text-transform: lowercase
+}
+
+.roleIcon_f75d0 {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #9b9b9b;
+    color: #9b9b9b;
+    font-size: 10px;
+    margin-right: 8px
+}
+
+.subtitleContainer_b9ae4 {
+    display: flex;
+    justify-content: center
+}
+
+.roleSubtitle_62c2d {
+    display: flex;
+    padding: 0 8px
+}
+
+.roleMultiplierText_07275 {
+    color: #000;
+    margin-top: 4px
+}
+
+.createTeamRoleSelectorSubtitle_67262 {
+    color: #7b7a7a;
+    font-size: 12px;
+    margin: 4px 0 0 0
+}
+
+.roleSelector_ae446 {
+    max-width: 550px;
+    background-color: #efeff4
+}
+
+.playerCard_0415a {
+    background-color: #fff;
+    display: flex;
+    height: 78px;
+    padding-left: 16px
+}
+
+.titleBox_583d4 {
+    max-width: 550px;
+    padding: 16px;
+    text-align: center;
+    margin: auto;
+    border-bottom: 1px solid #dcdcdc
+}
+
+.titleBoxMargin_4872f {
+    margin-top: 48px
+}
+
+.titleBoxMarginOnboarding_b0835 {
+    margin-top: 104px
+}
+
+.sortingHeaderWebkit_3d076 {
+    position: -webkit-sticky
+}
+
+.content_5e15a {
+    padding-bottom: 90px
+}
+
+.contentWithBanner_4dc55 {
+    padding-top: 64px
+}
+
+.playerCardAvatarCell_4541e {
+    flex-basis: 60px
+}
+
+.playerCardCell_bf9d8 {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.playerCardInfoCell_ba412 {
+    display: flex;
+    flex-grow: 1
+}
+
+.playerCardInfoContainer_4da24 {
+    border-bottom: 1px solid #dcdcdc
+}
+
+.playerName_73cad {
+    flex-basis: 44px;
+    justify-content: center;
+    color: #00a0ff
+}
+
+.playerCardNameCell_50086 {
+    flex-grow: 3;
+    flex-basis: 80px
+}
+
+.playerTeamTitle_a2024 {
+    font-size: 12px
+}
+
+.playerPointsCell_aa0e3 {
+    flex-grow: 1;
+    flex-basis: 60px;
+    justify-content: center
+}
+
+.sortingHeader_00815 {
+    display: flex;
+    align-items: center;
+    color: #acacac;
+    padding-left: 16px;
+    height: 56px;
+    font-size: 12px;
+    background-color: #efeff4;
+    border-bottom: 1px solid #e8e8e8;
+    position: sticky
+}
+
+.sortingHeaderWithBanner_b72a2 {
+    top: 112px
+}
+
+.sortingHeaderTop_98168 {
+    top: 48px
+}
+
+.sortingHeaderTopOnboarding_b9618 {
+    top: 104px
+}
+
+.sortingHeaderTopOnboardingWithBanner_2e954 {
+    top: 168px
+}
+
+.roleIcon_b2caf {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #9b9b9b;
+    display: flex;
+    color: #9b9b9b;
+    justify-content: center;
+    align-items: center
+}
+
+.roleSelected_961ad {
+    background-color: #000;
+    color: #fff
+}
+
+.footer_30a67 {
+    height: 40px;
+    position: fixed;
+    margin-bottom: 16px;
+    width: 100%;
+    max-width: 550px;
+    z-index: 6;
+    bottom: 0px
+}
+
+.footerButtonContainer_b9ae4 {
+    display: flex;
+    justify-content: center
+}
+
+.teamPreviewCTA_be241 {
+    margin-right: 8px
+}
+
+.rolesContainer_7991a {
+    display: flex;
+    flex: 0 0 100px;
+    align-items: center
+}
+
+.listDivider_5a927 {
+    width: 100%;
+    height: 12px
+}
+
+.sortingHeaderText_b2267 {
+    display: flex;
+    font-size: 12px;
+    color: #282828
+}
+
+.sortingHeaderButtons_029e0 {
+    display: flex
+}
+
+.sortingButton_8525f {
+    margin-left: 12px
+}
+
+.roleInfo_4198c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    height: 100%;
+    justify-content: space-evenly;
+    color: #7b7a7a
+}
+
+.createTeamRoleSelector_f5d37 {
+    margin: auto;
+    animation-duration: 200ms;
+    animation-timing-function: cubic-bezier(0.14, 1.06, 1, 0.99)
+}
+
+.createTeamRoleSelectorButtonElement_c4f2c {
+    margin: 0 4px
+}
+
+.footerSquadDetail_289be {
+    font-size: 10px;
+    height: 36px;
+    min-width: 36px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 4px;
+    white-space: nowrap
+}
+
+.footerSquadCountContainer_84fcf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px
+}
+
+.footerLargeCountContainer_e20d1 {
+    font-size: 17px
+}
+
+.footerSquadCount_1fb82 {
+    margin-right: 2px
+}
+
+.footerSquadInactive_d6046 {
+    color: #ADADAD
+}
+
+.footerDetailLeftContent_0a3c3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+}
+
+.footerDetailLeftInner_695c7 {
+    display: flex;
+    border-right: 2px dashed #979797;
+    padding: 0 4px;
+    margin: 0 2px
+}
+
+.footerSquadDot_e897f {
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    margin-right: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.createTeamTabsHelpContainer_ce9c9 {
+    height: 44px;
+    display: block;
+    align-items: center;
+    text-align:center;
+    color: #000;
+    justify-content: center;
+    background-color: #efeff4;
+}
+
+.newHelpText_573ca {
+    background-color: #00a0ff;
+    justify-content: space-between;
+    padding: 16px;
+    color: #fff
+}
+
+.newLabelContainer_44b8a {
+    display: flex;
+    overflow: hidden
+}
+
+.newLabelText_a4606 {
+    background-color: #4ebcff;
+    padding: 4px;
+    padding-left: 8px;
+    border-radius: 4px;
+    z-index: 5
+}
+
+.newLabelTagStyle_01db0 {
+    background-color: #4ebcff;
+    border-radius: 4px;
+    width: 25px;
+    transform: rotate(45deg);
+    position: relative;
+    left: -20px
+}
+
+.roleTabWrapper_a3522 {
+    display: block;
+    width: 100%
+}
+
+.roleTabItem_603ae {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #9c9c9c;
+    letter-spacing: 1px
+}
+
+.roleTabHighlight_ee4c9 {
+    transform: skew(-20deg);
+    height: 4px;
+    width: 100%
+}
+
+.roleTabHighlightInactive_4d390 {
+    background-color: #fff
+}
+
+.roleTabHighlightActive_28bb8 {
+    background-color: #c51d23
+}
+
+.createTeamTabTitle_99a5a {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 16px
+}
+
+.createTeamTabsCount_19658 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px
+}
+
+.createTeamTabsContainer_5ba85 {
+    display: flex;
+    flex: 1 0 0;
+    justify-content: center;
+    cursor: pointer
+}
+
+.tabsWrapper_43944 {
+    max-width: 550px;
+    overflow-x: hidden
+}
+
+.tabsMainContainer_e61d0 {
+    background: #fff;
+    position: absolute;
+    z-index: 5;
+    max-width: 550px;
+    width: 100%;
+    top: 344px !important;
+    transition: transform 0.2s
+}
+
+.tabsMainContainerWithoutOnboardingWithBanner_339b7 {
+    top: 248px
+}
+
+.tabsMainContainerOnboardingWithoutBanner_33dd6 {
+    top: 240px
+}
+
+.tabsMainContainerOnboardingWithBanner_84621 {
+    top: 304px
+}
+
+.tabsMainContainerExtended_d5200 {
+    transform: translateY(0px)
+}
+
+.tabsMainContainerOnboardingShrunk_cdfc4 {
+    transform: translateY(-48px)
+}
+
+.tabsMainContainerShrunk_cdfc4 {
+    transform: translateY(-48px)
+}
+
+.mainWrapper_62470 {
+    background: #fafafa;
+    overflow-y: hidden
+}
+
+.noError_5e15a {
+    padding-bottom: 90px
+}
+
+.playerListContainer_c345d {
+    overflow-y: scroll;
+    margin-top: 312px
+}
+
+.playerListContainerWithoutOnBoardingWithBanner_1f983 {
+    overflow-y: scroll;
+    margin-top: 140;
+}
+
+.playerListContainerOnBoarding_a8a21 {
+    overflow-y: scroll;
+    margin-top: 368px
+}
+
+.playerListContainerOnBoardingWithBanner_2c398 {
+    overflow-y: scroll;
+    margin-top: 432px
+}
+
+.playerCard_42b9d {
+    background-color: #fff;
+    display: flex;
+    height: 72px;
+    padding-left: 16px;
+    transition: background-color 300ms cubic-bezier(0, 2, 1, 1)
+}
+
+.playerCardInfoContainer_d41f9 {
+    border-bottom: 1px solid #e8e8e8
+}
+
+.teamPreviewText_2ca01 {
+    margin-top: -7px
+}
+
+.playerCardDisable_84b1d {
+    opacity: 0.5
+}
+
+.playerCardSelected_ae508 {
+    background-color: #fff7ec
+}
+
+.playerCardAvatarCell_2b8d1 {
+    flex: 0 0 60px
+}
+
+.playerCardIcon_b8a19 {
+    border-radius: 50%;
+    color: #24ba38;
+    align-self: center;
+    border: 1px solid
+}
+
+.playerCardIconSelected_4b666 {
+    color: #ffa500
+}
+
+.playerCardIconDisabled_a0371 {
+    color: #888
+}
+
+.playerCardIconContainer_65be8 {
+    display: flex;
+    flex-basis: 70px;
+    justify-content: center;
+    margin: 10px 0;
+    border-left: 1px solid #e8e8e8
+}
+
+.ctSortingHeader_a6515 {
+    display: flex;
+    height: 36px;
+    color: #acacac;
+    font-size: 12px;
+    border-bottom: 1px solid #e8e8e8;
+    padding-left: 16px
+}
+
+.sortingHeaderIconPlaceHolder_43273 {
+    display: flex;
+    flex-basis: 70px
+}
+
+.activeSortKey_c7202 {
+    color: #000
+}
+
+.spotlightSkipButton_4b62a {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    z-index: 9998
+}
+
+.statusDot_ebe68 {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%
+}
+
+.statusInfo_643e0 {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    padding-top: 4px
+}
+
+.statusText_3cbfd {
+    padding-left: 4px
+}
+
+.createTeamTabs_b9767 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto
+}
+
+.createTeamTeamSelectorPlayerList_04a34 {
+    flex: 1 0 0
+}
+
+.createTeamTeamSelectorPlayerCardCellColPlayerHeader_c234f {
+    margin-bottom: 4px
+}
+
+.onboardingHeader_40bc5 {
+    height: 56px;
+    display: flex;
+    padding: 8px 16px
+}
+
+.createTeamPlayerProfileFooter_0236d {
+    background: #3659a5;
+    padding: 8px;
+    justify-content: center;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    bottom: 0
+}
